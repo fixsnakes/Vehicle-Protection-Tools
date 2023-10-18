@@ -1,7 +1,11 @@
 
 import threading
 import os
-import time, sys, locale
+import time, sys
+try:
+    import colorama
+except:
+    os.system("pip install colorama")
 from colorama import Fore, Style
 
 os.system("mode con cols=2000 lines=2000")
@@ -22,7 +26,7 @@ for line in file_avatar.split("\n"):
     time.sleep(0.02)
 
 try:
-    import PyQt5, bs4, openpyxl, requests
+    import PyQt5, bs4, openpyxl, requests,lll
 except:
     print("Downloading Package....... Doi Mot Chut!!!")
     time.sleep(5)

@@ -183,7 +183,8 @@ class MyWindow(QMainWindow):
                 self.status_update.emit(index, "VIOLATED!🛑🛑🛑")
                 self.data_violated.append(result)
         elif self.ui_main.radioButton_5.isChecked():
-            result = server2.getdata(license_key)
+            #result = server2.getdata(license_key)
+          '''
             if result == "NOT VIOLATED":
                 self.not_violated.emit(1)
                 self.status_update.emit(index, "NOT VIOLATED! ")
@@ -193,6 +194,8 @@ class MyWindow(QMainWindow):
                 self.violated.emit(1)
                 self.status_update.emit(index, "VIOLATED!🛑🛑🛑")
                 self.data_violated.append(result)
+          '''
+          self.status_update.emit(index, "Server Bao Tri ^^^^")
         else:
             self.status_update.emit(index, "Please Select A Server🛑🛑🛑")
 

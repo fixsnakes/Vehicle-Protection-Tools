@@ -148,12 +148,15 @@ class MyWindow(QMainWindow):
                 self.ui_main.label_32.setText("Error")
 
         elif self.ui_main.radioButton_5.isChecked():
-            result = server2.check_status()
+            #result = server2.check_status()
+                  '''
             if result == "Active":
                 self.ui_main.label_32.setStyleSheet("color:#008000")
                 self.ui_main.label_32.setText("Active")
             else:
                 self.ui_main.label_32.setText("Error")
+                '''
+          self.ui_main.label_32.setText("Server Bao Tri")
         else:
             self.ui_main.label_32.setText("Server not selected")
         if self.stop == True:

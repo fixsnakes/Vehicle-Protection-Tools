@@ -19,7 +19,7 @@ def getdata(license_key):
         'Content-Type': 'application/json'
     }
     # $$$$$$$$$$$$$$$$$$$
-    p = requests.post("https://asia-east2-viphamgiaothong2019.cloudfunctions.net/national", data=data, headers=header)
+  
 
     '''
     result_data = {'result': {'isSuccess': True, 'violations': [
@@ -91,8 +91,6 @@ def check_status():
             'Content-Type': 'application/json'
         }
         # $$$$$$$$$$$$$$$$$$$
-        p = requests.post("https://asia-east2-viphamgiaothong2019.cloudfunctions.net/national", data=data,
-                          headers=header)
         result_data = p.json()
         is_success = result_data['result']['isSuccess']
         if is_success == True:

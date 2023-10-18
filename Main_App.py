@@ -33,6 +33,7 @@ except:
     os.system("pip install pyqt5")
     os.system("pip install requests")
     os.system("pip install openpyxl")
+    os.system("pip install bs4")
     os.system("exit")
 from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QFileDialog
 from PyQt5 import QtCore, QtGui, QtWidgets

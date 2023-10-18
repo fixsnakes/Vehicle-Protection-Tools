@@ -34,7 +34,8 @@ from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QFileDialog
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtCore import QThread, pyqtSignal
 from login_ui import Ui_Form
-import server1, server2
+import server1
+#import server2
 from main_gui import Ui_Form_Main
 import datetime
 import openpyxl
@@ -149,14 +150,14 @@ class MyWindow(QMainWindow):
 
         elif self.ui_main.radioButton_5.isChecked():
             #result = server2.check_status()
-                  '''
+            '''
             if result == "Active":
                 self.ui_main.label_32.setStyleSheet("color:#008000")
                 self.ui_main.label_32.setText("Active")
             else:
                 self.ui_main.label_32.setText("Error")
-                '''
-          self.ui_main.label_32.setText("Server Bao Tri")
+            '''
+            self.ui_main.label_32.setText("Server Bao Tri")
         else:
             self.ui_main.label_32.setText("Server not selected")
         if self.stop == True:
